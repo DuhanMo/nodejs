@@ -20,3 +20,4 @@ console.log('os.cpus().length: ', os.cpus().length);
 console.log('메모리 정보-----------------');
 console.log('os.freemem():', os.freemem());
 console.log('os.totalmem():', os.totalmem());
+// 커밋
