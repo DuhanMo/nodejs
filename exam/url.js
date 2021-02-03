@@ -9,3 +9,5 @@ const parsedUrl = url.parse('http://www.gilbut.co.kr/book/bookList.aspx?sercate1
 console.log('url.parse():', parsedUrl);
 console.log('url.format():', url.format(parsedUrl));
 
+require('./var')
+console.log(require);
