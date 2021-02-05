@@ -11,3 +11,6 @@ console.log('url.format():', url.format(parsedUrl));
 
 require('./var')
 console.log(require);
+
+
+ 

@@ -24,3 +24,4 @@ console.log('os.totalmem():', os.totalmem());
 // 중요
 console.log('----------------');
 console.log(os.cpus());
+
