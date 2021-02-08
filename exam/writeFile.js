@@ -8,6 +8,6 @@ fs.writeFile('./writeme.txt','글이 입력됩니까?!123123')
     console.log(data.toString());
   })
   .catch((err) => {
-    throw err;
+    throw err;]
   });
   
