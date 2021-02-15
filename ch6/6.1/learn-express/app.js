@@ -6,6 +6,8 @@ const dotenv = require('dotenv');
 const path = require('path');
 
 dotenv.config();
+const indexRouter = require('./routes');
+const userRouter = require('./routes/user');
 const app = express();
 app.set('port', process.env.PORT || 3000);
 
@@ -24,6 +26,13 @@ app.use(session({
   },
   name: 'session-cookie',
 }));
+app.use('/', indexRouter);
+app.use('/user', userRouter);
+
+app.use((req, res, next) => {
+  res.status(404).send('Not Found~!');
+});
+
 
 const multer = require('multer');
 const fs = require('fs');
@@ -46,11 +55,16 @@ const upload = multer({
   }),
   limits: { fileSize: 5 * 1024 * 1024 },
 });
+
+
+
 app.get('/upload', (req, res) => {
   res.sendFile(path.join(__dirname, 'multipart.html'));
 });
-app.post('/upload', upload.single('image'), (req, res) => {
-  console.log(req.file);
+app.post('/upload',
+ upload.fields([{name: 'image1'}, {name: 'image2'}]), 
+ (req, res) => {
+  console.log(req.files, req.body);
   res.send('ok');
 });
 
