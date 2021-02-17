@@ -6,15 +6,15 @@
   "scripts": {
     "start": "nodemon app"
   },
-  "author": "Ethan",
+  "author": "ZeroCho",
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.11.16",
+    "mongoose": "^5.9.10",
     "morgan": "^1.10.0",
-    "nunjucks": "^3.2.3"
+    "nunjucks": "^3.2.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.7"
+    "nodemon": "^2.0.3"
   }
 }
