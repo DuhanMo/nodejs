@@ -28,7 +28,7 @@ sequelize.sync({ force: false })
   .catch((err) => {
     console.error(err);
   });
-
+// 미들웨어 연결
 app.use(morgan('dev'));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.json());
