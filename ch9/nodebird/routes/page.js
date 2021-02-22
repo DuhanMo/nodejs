@@ -40,5 +40,5 @@ router.get('/', async (req, res, next) => {
     next(err);
   }
 });
-
+// aws 터진거 잡는중
 module.exports = router;
