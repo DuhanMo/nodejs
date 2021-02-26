@@ -106,3 +106,10 @@ input[type='text'], input[type='email'], input[type='password'], textarea {
 #join-form { padding: 10px; text-align: center; }
 #hashtag-form { text-align: right; }
 footer { text-align: center; }
+
+.following-cancel{
+  padding: 1px, 5px;
+  background: #fff;
+  border: 1px solid black;
+  color: crimson;
+}
